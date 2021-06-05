@@ -1,0 +1,22 @@
+Mô tả chương trình:
+Xây dựng ứng dụng Quản lý Sinh viên(sử dụng List, File, Exception, Regex… để thực hiện các yêu cầu).
+Mỗi đối tượng sinh viên có các thuộc tính sau: Mã sinh viên, Họ tên, Ngày sinh, Giới tính, Địa chỉ, Email và Điểm trung bình.
+Yêu cầu của chức năng gồm:
+1. Quản lý thông tin của từng sinh viên (các thao tác thêm, sửa, xoá, tìm kiếm, sắp xếp)
+2. Đọc/Ghi thông tin sinh viên với File CSV
+Menu chức năng được hiển thị khi mở chương trình:
+1. Lựa chọn “Thêm mới” sẽ thực hiện mở màn hình “Thêm mới sinh viên” (tự xây dựng màn hình "Thêm mới")
+-  Yêu cầu kiểm tra định dạng dữ liệu:
++ Mã định dạng: Cxxxx[G|H|I|K]xx (x là chữ số, G/H/I/K là tên giờ học - chọn 1 trong số 4 khung giờ này)
++ Email có định dạng: tên.họ@codegym.vn
++ Ngày tháng có định dạng: DD-MM-YYYY
+2. Lựa chọn “Xem danh sách sinh viên” sẽ hiển thị tất cả sinh viên hiện có (mặc định + thêm mới)
+- Danh sách sinh viên thay vì hiển thị Ngày sinh thì chuyển sang hiển thị Tuổi (Mã sinh viên, Họ tên, Tuổi, Giới tính, Địa chỉ, Email, Điểm trung bình)
+3. Lựa chọn “Cập nhật” sẽ thực hiện mở màn hình “Cập nhật sinh viên” (tự xây dựng màn hình "Cập nhật")
+- Dữ liệu khi cập nhật cũng cần kiểm tra định dạnh như trên (yêu cầu 1)
+4. Lựa chọn “Xóa” sẽ thực hiện cảnh báo người dùng trước khi xóa sinh viên đó
+- Nếu người dùng chấp nhận sẽ thực hiện xóa thông tin và tải lại danh sách
+5. Lựa chọn "Tìm kiếm" sẽ thực hiện mở màn hình "Tìm kiếm" (tự xây dựng màn hình "Tìm kiếm" với các tiêu chí tìm kiếm khác nhau: theo mã, theo tên, theo khoảng tuổi, theo khoảng điểm)
+5. Lựa chọn “Sắp xếp” (theo tiêu chí: điểm trung bình, họ tên, nếu điểm trung bình như nhau thì sắp xếp theo họ tên)
+6. Lựa chọn “Ghi vào file” sẽ thực hiện ghi danh sách sinh viên hiện tại vào file
+7. Lựa chọn “Đọc từ file” sẽ thực hiện đọc danh sách sinh viên từ file hiển thị ra ngoài màn hình
